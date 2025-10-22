@@ -95,6 +95,13 @@
                     <div class="md:w-2/3">
                         <p class="mb-4">I am a young programmer interested in backend development. I have hands-on experience with Python and Golang, and databases like PostgreSQL and MySQL.</p>
                         <p class="mb-4">My academic background provides a strong foundation in finance and machine learning, complemented by practical work in computer vision. I’m enthusiastic about cloud-native architectures, cybersecurity, and automation, and eager to contribute in collaborative environments.</p>
+                        <div class="mt-6">
+                            <!-- Make sure to place your CV in the /assets folder and name it Aliko_Beraia_CV.pdf -->
+                            <a href="assets/Aliko_Beraia_CV.pdf" target="_blank" class="inline-flex items-center bg-teal-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-teal-600 transition-transform transform hover:scale-105">
+                                <i data-lucide="download" class="w-5 h-5 mr-2"></i>
+                                Download CV
+                            </a>
+                        </div>
                     </div>
                     <div class="md:w-1/3 bg-slate-700 p-6 rounded-lg shadow-lg">
                         <p class="mb-3 flex items-center"><i data-lucide="map-pin" class="w-5 h-5 mr-3 text-teal-400"></i>Based in London, UK</p>
@@ -203,25 +210,65 @@
         <!-- 6. Projects Section --><section id="projects" class="py-20 bg-slate-800">
             <div class="container mx-auto px-6">
                 <h2 class="section-title">Projects</h2>
-                <div class="grid md:grid-cols-2 gap-8">
-                    <!-- Project 1: Banner Service --><div class="bg-slate-700 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
-                        <div class="p-6">
+                <div class="flex overflow-x-auto space-x-6 pb-4 projects-container">
+                    <!-- Project 1: Banner Service --><div class="min-w-[320px] w-[320px] bg-slate-700 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 flex flex-col">
+                        <div class="p-6 flex-grow">
                             <h3 class="text-2xl font-bold text-white mb-2">Banner Service</h3>
                             <p class="text-gray-400 mb-4 text-sm">A service for managing and serving advertisement banners with authentication and load testing.</p>
                             <div class="flex flex-wrap gap-2 mb-4">
                                <span class="skill-tag">Golang</span><span class="skill-tag">Docker</span><span class="skill-tag">Redis</span><span class="skill-tag">Postgres</span><span class="skill-tag">K6</span>
                             </div>
+                        </div>
+                        <div class="p-6 pt-0">
                             <a href="https://github.com/MrGummyl3ear/banner-service" target="_blank" class="inline-flex items-center text-teal-400 hover:text-teal-300">View Code <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i></a>
                         </div>
                     </div>
-                    <!-- Project 2: Link Shortener Microservice --><div class="bg-slate-700 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
-                        <div class="p-6">
+                    <!-- Project 2: Link Shortener --><div class="min-w-[320px] w-[320px] bg-slate-700 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 flex flex-col">
+                        <div class="p-6 flex-grow">
                             <h3 class="text-2xl font-bold text-white mb-2">Link Shortener Microservice</h3>
                             <p class="text-gray-400 mb-4 text-sm">A vertically scalable microservice for URL shortening, supporting HTTP/1.1 and gRPC.</p>
                             <div class="flex flex-wrap gap-2 mb-4">
                                 <span class="skill-tag">Golang</span><span class="skill-tag">Docker</span><span class="skill-tag">gRPC</span><span class="skill-tag">Postgres</span>
                             </div>
+                        </div>
+                        <div class="p-6 pt-0">
                              <a href="https://github.com/MrGummyl3ear/link-shortener" target="_blank" class="inline-flex items-center text-teal-400 hover:text-teal-300">View Code <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i></a>
+                        </div>
+                    </div>
+                    <!-- Project 3: Marketplace API --><div class="min-w-[320px] w-[320px] bg-slate-700 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 flex flex-col">
+                        <div class="p-6 flex-grow">
+                            <h3 class="text-2xl font-bold text-white mb-2">Marketplace API</h3>
+                            <p class="text-gray-400 mb-4 text-sm">A REST API for a simple marketplace with user authentication, item creation, and listing feeds.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                               <span class="skill-tag">Golang</span><span class="skill-tag">Gin</span><span class="skill-tag">GORM</span><span class="skill-tag">JWT</span><span class="skill-tag">Docker</span>
+                            </div>
+                        </div>
+                        <div class="p-6 pt-0">
+                            <a href="https://github.com/MrGummyl3ear/marketplace" target="_blank" class="inline-flex items-center text-teal-400 hover:text-teal-300">View Code <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i></a>
+                        </div>
+                    </div>
+                    <!-- Project 4: Scientometric Parser --><div class="min-w-[320px] w-[320px] bg-slate-700 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 flex flex-col">
+                        <div class="p-6 flex-grow">
+                            <h3 class="text-2xl font-bold text-white mb-2">Scientometric Parser</h3>
+                            <p class="text-gray-400 mb-4 text-sm">A multi-threaded parser to collect scientometric data from various scientific websites.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="skill-tag">Python</span><span class="skill-tag">Scrapy</span><span class="skill-tag">BeautifulSoup</span>
+                            </div>
+                        </div>
+                        <div class="p-6 pt-0">
+                             <a href="https://github.com/MrGummyl3ear/Parser" target="_blank" class="inline-flex items-center text-teal-400 hover:text-teal-300">View Code <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i></a>
+                        </div>
+                    </div>
+                    <!-- Project 5: DrawAR --><div class="min-w-[320px] w-[320px] bg-slate-700 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 flex flex-col">
+                        <div class="p-6 flex-grow">
+                            <h3 class="text-2xl font-bold text-white mb-2">DrawAR</h3>
+                            <p class="text-gray-400 mb-4 text-sm">An innovative Android app that enables users to sketch and draw in an immersive 3D Augmented Reality space.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="skill-tag">C#</span><span class="skill-tag">Unity</span><span class="skill-tag">AR</span><span class="skill-tag">Android</span>
+                            </div>
+                        </div>
+                        <div class="p-6 pt-0">
+                             <a href="https://github.com/MrGummyl3ear/DrawAR" target="_blank" class="inline-flex items-center text-teal-400 hover:text-teal-300">View Code <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i></a>
                         </div>
                     </div>
                 </div>
@@ -292,3 +339,4 @@
     </script>
 </body>
 </html>
+
